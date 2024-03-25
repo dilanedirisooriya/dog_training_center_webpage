@@ -1,0 +1,122 @@
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #6E2D58 0%, #52123C 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.hero-text h1{
+    font-size: 75px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 75px;
+    text-align: left;
+    max-width: 600px;
+    margin-bottom: 25px;
+
+
+}
+.hero-text h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 40px;
+    text-align: left;
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+.hero-img img{
+    width: 450px;
+    border-radius: 50%;    
+    position: relative;
+
+}
+
+.circle {
+
+    height: 460px;
+    width: 460px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    position: absolute; 
+
+  }
+
+
+  /************media query*************/
+
+@media (max-width: 1000px) {
+
+    .hero-text h1{
+        font-size: 50px;
+        line-height: 50px;
+        max-width: 600px;
+        margin-bottom: 25px;
+    }
+    .hero-text h3{
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 400px;
+        margin-bottom: 25px;
+    }
+    .hero-img img{
+        width: 350px;    
+    }
+    
+    .circle {
+        height: 360px;
+        width: 360px;    
+      }
+}
+
+@media (max-width: 800px) {
+
+    .hero-text h1{
+        font-size: 40px;
+        margin-bottom: 20px;   
+
+    }
+    .hero-text h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .hero-img img{
+        width: 350px;    
+    }
+    .circle {
+        height: 360px;
+        width: 360px;    
+      }
+}
+
+@media (max-width: 600px){
+    .hero{
+        flex-direction: column;
+        padding-top: 100px;
+        min-height: 100vh;
+        justify-content: space-around;
+    }
+    .hero-text h1{
+        text-align: center;
+        max-width: 100%;
+
+    }
+    .hero-text h3{
+        text-align: center;
+        max-width: 100%;
+    }
+    .hero-img img{
+        width: 310px; 
+        text-align: center;
+        max-width: 100%;
+    }
+    .circle {
+        height: 320px;
+        width: 320px;    
+      }
+    
+}
